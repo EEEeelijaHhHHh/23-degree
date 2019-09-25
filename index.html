@@ -1,18 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>23 Degree</title>
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body>
 
-  
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header-nav">
+        <a href="#" class="header-nav__logo logo">
+          <img src="img/logo.png" alt="23" class="logo__img">
+          <span class="logo__title">Degree</span>
+        </a>
+        <div class="header-nav__phone phone">
+          <span class="phone__icon icon-mobile"></span>
+          <div class="phone-content">
+            <span class="phone-content__text">Есть вопросы? Звоните!</span>
+            <a href="tel:+88002590936" class="phone-content__number">8 /800/ 259 09 36</a>
+          </div>
+        </div>
+        <button class="hamburger">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__text">Меню</span>
+        </button>
+      </nav>
+      <h1 class="header__title">Услиги по 3D моделированию <small class="header__title-small">полный спектр
+          услуг</small></h1>
+      <span class="header__text">Оставьте заявку сейчас и получите дизайн интерьера 25кв2 бесплатно!*</span>
+      <form action="" class="header-form">
+        <div class="header-form-wrapper">
+          <input type="text" class="header-form__input" placeholder="Ваше имя">
+          <input type="email" class="header-form__input" placeholder="E-mail">
+          <input type="tel" class="header-form__input" placeholder="Номер телефона">
+        </div>
+        <button type="submit" class="header-form__btn btn">Оставить заявку!</button>
+        <span class="header-form__text">*Мы гарантируем конфидициальность передаваемых данных</span>
+      </form>
+    </div>
+  </header>
+
+
   <!-- Main JS -->
   <script src="js/main.js"></script>
 </body>
+
 </html>
