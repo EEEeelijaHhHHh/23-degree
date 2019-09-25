@@ -40,13 +40,75 @@
           <input type="email" class="header-form__input" placeholder="E-mail">
           <input type="tel" class="header-form__input" placeholder="Номер телефона">
         </div>
-        <button type="submit" class="header-form__btn btn">Оставить заявку!</button>
+        <button type="submit" class="header-form__btn btn btn_lg">Оставить заявку!</button>
         <span class="header-form__text">*Мы гарантируем конфидициальность передаваемых данных</span>
       </form>
     </div>
   </header>
 
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Наши услуги</h2>
+      <div class="services">
+        <figure class="services__item">
+          <div class="services__content">
+            <figcaption class="services__title">Дизайн интерьера</figcaption>
+            <p class="services__text">Услуга, направленная на разработку интерьеров помещений с целью обеспечить
+              удобство и эстетически приятное ощущение у человека при нахождении в помещении</p>
+            <button class="btn services__btn">Оставить заявку</button>
+          </div>
+          <img src="img/services/01.png" alt="" class="services__img">
+        </figure>
+        <figure class="services__item">
+          <img src="img/services/02.png" alt="" class="services__img">
+          <div class="services__content_left">
+            <figcaption class="services__title">Дизайн экстерьера</figcaption>
+            <p class="services__text">Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также
+              дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+          </div>
+        </figure>
+        <figure class="services__item">
+          <div class="services__content">
+            <figcaption class="services__title">Визуализация</figcaption>
+            <p class="services__text">Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также
+              дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+          </div>
+          <img src="img/services/03.png" alt="" class="services__img">
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section__title">Портфолио</div>
+      <ul class="portfolio-menu">
+        <li class="portfolio-menu__item"><button class="portfolio-menu__btn portfolio-menu__btn_active"
+            data-filter="*">все проекты</button></li>
+        <li class="portfolio-menu__item"><button class="portfolio-menu__btn"
+            data-filter=".exteriors">экстерьеры</button>
+        </li>
+        <li class="portfolio-menu__item"><button class="portfolio-menu__btn" data-filter=".residential">жилые
+            интерьеры</button></li>
+        <li class="portfolio-menu__item"><button class="portfolio-menu__btn" data-filter=".public">общественные
+            интерьеры</button></li>
+      </ul>
+      <div class="portfolio-works">
+        <div class="portfolio-works__item portfolio-works__item_1 residential"></div>
+        <div class="portfolio-works__item portfolio-works__item_2 public"></div>
+        <div class="portfolio-works__item portfolio-works__item_3 exteriors"></div>
+        <div class="portfolio-works__item portfolio-works__item_4 residential"></div>
+        <div class="portfolio-works__item portfolio-works__item_5 exteriors"></div>
+        <div class="portfolio-works__item portfolio-works__item_6 public"></div>
+      </div>
+    </div>
+  </section>
 
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Isotope -->
+  <script src="js/isotope.min.js"></script>
   <!-- Main JS -->
   <script src="js/main.js"></script>
 </body>
