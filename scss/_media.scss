@@ -211,6 +211,18 @@
       margin-bottom: 30px;
     }
   }
+
+  .footer {
+    &-nav {
+      &-list {
+        width: 67%;
+        &__item {
+          flex: 1 1 50%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -274,6 +286,28 @@
 
     &__title {
       font-size: 25px;
+    }
+  }
+
+  .footer {
+    font-size: 12px;
+
+    &-nav {
+      &-list {
+        width: 50%;
+
+        &__item {
+          flex: 1 1 100%;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        &__link {
+          font-size: 12px;
+        }
+      }
     }
   }
 }
