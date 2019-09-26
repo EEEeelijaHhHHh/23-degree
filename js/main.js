@@ -9,6 +9,8 @@ $(function () {
   function adaptive () {
     prependAdaptiveItem(768, '.services__item:first-child', '.services__item:first-child .services__img');
     prependAdaptiveItem(768, '.services__item:last-child', '.services__item:last-child .services__img');
+    prependAdaptiveItem(768, '.process__item:first-child', '.process__item:first-child .process__title');
+    prependAdaptiveItem(768, '.process__item:nth-child(3)', '.process__item:nth-child(3) .process__title');
   };
 
   function prependAdaptiveItem(breakpoint, block, item, ) {

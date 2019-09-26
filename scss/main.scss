@@ -153,7 +153,7 @@ body {
     bottom: 0;
     left: 0;
     background-color: #363636;
-    opacity: 0.74;
+    opacity: 0.6;
     z-index: 2;
   }
 
@@ -264,6 +264,13 @@ body {
     font-weight: 300;
     margin: 0 0 30px 0;
 
+    &_white {
+      color: #ffffff;
+      &::after {
+        background-color: #fff !important;
+      }
+    }
+
     &::after {
       display: block;
       content: '';
@@ -273,8 +280,15 @@ body {
       margin: 20px auto 0 auto;
     }
   }
-}
 
+  &__subtitle {
+    text-align: center;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+  }
+}
 /* /Section */
 
 /* Services Section */
@@ -408,8 +422,7 @@ body {
   margin: 0;
 
   &-wrapper {
-    background-color: #f2f8f9;
-    opacity: 0.8;
+    background-color: rgba(#f2f8f9, .8);
   }
 
   &__item {
@@ -448,35 +461,38 @@ body {
         top: 30px;
         left: 80px;
       }
+
       &_3::before {
         top: 20px;
         left: 120px;
-        }
       }
-      &_4::before {
-        top: 10px;
-        left: 90px;
-      }
-      &_5::before {
-        top: -5px;
-        left: 80px;
-      }
-      &_6::before {
-        top: 25px;
-        left: 85px;
-      }
+    }
 
-      &::after {
-        position: absolute;
-        display: block;
-        content: '';
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        width: 125px;
-        height: 1px;
-        background-color: $active-color;
-      }
+    &_4::before {
+      top: 10px;
+      left: 90px;
+    }
+
+    &_5::before {
+      top: -5px;
+      left: 80px;
+    }
+
+    &_6::before {
+      top: 25px;
+      left: 85px;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: '';
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 125px;
+      height: 1px;
+      background-color: $active-color;
     }
   }
 
@@ -491,6 +507,292 @@ body {
 
 /* /Advantage Section */
 
+/* Process Section */
+.process {
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  &__img {
+    width: 50%;
+    max-width: 570px;
+    height: auto;
+  }
+
+  &__title {
+    flex-basis: 50%;
+    text-align: center;
+    color: #464646;
+    font-size: 30px;
+    font-weight: 300;
+  }
+}
+
+/* /Process Section */
+
+/* Team Section */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    flex: 1 1 33%;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__img {
+    display: block;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+  }
+
+  &__name {
+    display: block;
+    color: $active-color;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    display: block;
+    color: #464646;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+/* /Team Section */
+
+/* Quote Section */
+.quote {
+  position: relative;
+  color: #464646;
+  text-align: center;
+
+  &-wrapper {
+    padding-bottom: 70px;
+  }
+
+  &__icon {
+    position: absolute;
+    color: $active-color;
+    font-size: 40px;
+
+    &_left {
+      top: 0;
+      left: 0;
+    }
+
+    &_right {
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0 0 15px 0;
+  }
+
+  &__text {
+    max-width: 945px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0 auto 15px auto;
+  }
+
+  &__name {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+  }
+
+  &__position {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+/* /Quote Section */
+
+/* Blog Section */
+.blog {
+  display: flex;
+  justify-content: space-between;
+
+  &-wrapper {
+    background-color: rgba(#f2f8f9, .8);
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__link {
+    color: $active-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__img {
+    max-width: 555px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    text-align: center;
+    color: $active-color;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    width: 505px;
+    margin: 0 auto;
+  }
+}
+
+/* /Blog Section */
+
+/* Contacts Section */
+.contacts {
+  display: flex;
+  justify-content: space-between;
+
+  &-wrapper {
+    position: relative;
+    background: url('../img/contacts/bg.jpg') no-repeat 50% 50%;
+    background-size: cover;
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #363636;
+      opacity: 0.6;
+      z-index: 2;
+    }
+  }
+
+  &-form {
+    width: 65%;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    &__input {
+      display: block;
+      height: 50px;
+      width: 30%;
+      padding: 0 20px;
+    }
+
+    &__textarea {
+      display: block;
+      resize: none;
+      width: 100%;
+      height: 120px;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+    &__input,
+    &__textarea {
+      border-radius: 10px;
+      outline: none;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      transition: all .2s ease-in;
+
+      &:focus {
+        border: solid 2px #19b5fe;
+      }
+    }
+
+    &__input,
+    &__input::placeholder,
+    &__textarea,
+    &__textarea::placeholder {
+      color: #606060;
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    &__btn {
+      display: block;
+      margin: 0 auto;
+      padding: 0 45px;
+    }
+  }
+
+  &-content {
+    &__time {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+  &-list {
+    padding: 0;
+    margin: 0;
+
+    &__item {
+      list-style: none;
+      margin-bottom: 15px;
+      &:last-child {margin-bottom: 20px;}
+    }
+
+    &__icon {
+      color: #fff;
+      font-size: 15px;
+
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 27px;
+        height: 27px;
+        border: 1px solid #fff;
+        border-radius: 5px;        
+        margin-right: 15px;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+}
+
+/* /Contacts Section */
 
 /* Import Media */
 @import 'media';
