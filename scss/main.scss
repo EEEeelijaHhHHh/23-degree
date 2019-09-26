@@ -799,6 +799,15 @@ body {
 
 /* /Contacts Section */
 
+/* Map Section */
+.map {
+  height: 600px;
+  width: 100%;
+  background-color: rgba(#363636, .6);
+}
+/* /Map Section */
+
+/* Footer */
 .footer {
   background-color: #24241f;
   padding: 40px 0 50px 0;
@@ -867,9 +876,8 @@ body {
       }
     }
   }
-
-  &__copyright {}
 }
+/* /Footer */
 
 /* Import Media */
 @import 'media';
