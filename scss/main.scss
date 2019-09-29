@@ -534,6 +534,27 @@ body {
 
 /* /Process Section */
 
+/* Partners Section */
+.partners {
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  cursor: pointer;
+  padding-bottom: 40px;
+  &_active {
+    cursor: grabbing;
+  }
+  &-wrapper {
+    background-color: rgba(#f2f8f9, .8);
+  }
+  &__img {
+    margin-right: 30px;
+    &:last-child {margin-right: 0;}
+  }
+}
+/* /Partners Section */
+
 /* Team Section */
 .team {
   display: flex;
