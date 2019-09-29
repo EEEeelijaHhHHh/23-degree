@@ -78,6 +78,83 @@
       </div>
     </div>
   </section>
+  <section class="section price-wrapper">
+    <div class="container">
+      <h2 class="section__title section__title_white">Расчитать стоимость</h2>
+      <h3 class="section__subtitle">Расчитайте предварительную стоимость разработки интерьера</h3>
+      <div class="price">
+        <div class="price-choose">
+          <form action="" class="price-form price-choose__item">
+            <span class="price-choose__title">Площадь помещения:</span>
+            <ul class="price-form__list">
+              <li class="price-form__item">
+                <label for="100" class="price-form__label">100м<sup>2</sup></label>
+                <input type="radio" class="price-form__checkbox price-form__checkbox_first" name="area" id="100">
+                <span class="price-form__checkmark price-form__checkmark_first"></span>
+              </li>
+              <li class="price-form__item">
+                <label for="10000" class="price-form__label">10 000м<sup>2</sup></label>
+                <input type="radio" class="price-form__checkbox" checked name="area" id="10000">
+                <span class="price-form__checkmark"></span>
+              </li>
+              <li class="price-form__item">
+                <label for="250000" class="price-form__label">250 000м<sup>2</sup></label>
+                <input type="radio" class="price-form__checkbox" name="area" id="250000">
+                <span class="price-form__checkmark"></span>
+              </li>
+              <li class="price-form__item">
+                <label for="500000" class="price-form__label">500 000м<sup>2</sup></label>
+                <input type="radio" class="price-form__checkbox price-form__checkbox_last" name="area" id="500000">
+                <span class="price-form__checkmark price-form__checkmark_last"></span>
+              </li>
+            </ul>
+          </form>
+          <div class="price-package price-choose__item">
+            <span class="price-choose__title">Выберите пакет:</span>
+            <div class="price-package__buttons">
+              <div class="price-package__buttons-wrapper">
+                <button class="price-package__btn price-package__btn_first">Light</button>
+                <span class="price-package__btn-description price-package__btn">План расстановки мебели 3D
+                  визуализация. Все рабочие
+                  чертежи (план полов, план потолка, развертки по стенам, план электросетей)</span>
+              </div>
+              <div class="price-package__buttons-wrapper">
+                <button class="price-package__btn price-package__btn_active">Medium</button>
+                <span class="price-package__btn-description">План расстановки мебели 3D визуализация. Все рабочие
+                  чертежи (план полов, план потолка, развертки по стенам, план электросетей)</span>
+              </div>
+              <div class="price-package__buttons-wrapper">
+                <button class="price-package__btn">Full</button>
+                <span class="price-package__btn-description price-package__btn-description_last">План расстановки мебели 3D
+                  визуализация. Все рабочие
+                  чертежи (план полов, план потолка, развертки по стенам, план электросетей)</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="price-number">
+          <ul class="price-number__list">
+            <li class="price-number__item">
+              <span class="price-number__title">Площадь помещения:</span>
+              <span class="price-number__count">1 000м<sup>2</sup></span>
+            </li>
+            <li class="price-number__item">
+              <span class="price-number__title">Средняя стоимость м<sup>2</sup>:</span>
+              <span class="price-number__count">4 850 тг.</span>
+            </li>
+            <li class="price-number__item">
+              <span class="price-number__title">Средняя стоимость объекта:</span>
+              <span class="price-number__count">48 500 тг.</span>
+            </li>
+          </ul>
+          <button class="price-number__btn btn">Получить консультацию специалиста</button>
+          <span class="price-number__phone-title">или позвоните нам по телефону:</span>
+          <a href="tel:+77273887177" class="price-number__phone">+ 7 727 388 71 77</a>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="section">
     <div class="container">
       <div class="section__title">Портфолио</div>
@@ -330,7 +407,8 @@
           <span class="footer-nav-social__title">Мы в социальных сетях:</span>
           <ul class="footer-nav-social-list">
             <li class="footer-nav-social-list__item">
-              <a href="" class="footer-nav-social-list__link"><span class="footer-nav-social-list__icon icon-facebook"></span></a>
+              <a href="" class="footer-nav-social-list__link"><span
+                  class="footer-nav-social-list__icon icon-facebook"></span></a>
             </li>
             <li class="footer-nav-social-list__item">
               <a href="" class="footer-nav-social-list__link"><span
@@ -354,7 +432,8 @@
   <!-- Isotope -->
   <script src="js/isotope.min.js"></script>
   <!-- Yandex Map -->
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=2a537739-9835-4562-a875-a95d923bf007&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=2a537739-9835-4562-a875-a95d923bf007&lang=ru_RU"
+    type="text/javascript"></script>
   <script src="js/map.js"></script>
   <!-- Main JS -->
   <script src="js/main.js"></script>

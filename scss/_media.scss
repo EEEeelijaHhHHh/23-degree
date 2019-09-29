@@ -47,6 +47,15 @@
     }
   }
 
+  .price {
+    flex-direction: column;
+
+    &-choose {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
   .portfolio {
     &-menu {
       width: 100%;
@@ -216,6 +225,7 @@
     &-nav {
       &-list {
         width: 67%;
+
         &__item {
           flex: 1 1 50%;
           margin-bottom: 10px;
@@ -234,6 +244,8 @@
 
   .section {
     &__title {
+      font-size: 28px;
+
       &::after {
         width: 100%;
       }
@@ -260,6 +272,51 @@
     &__text {
       font-size: 16px;
       margin-bottom: 40px;
+    }
+  }
+
+  .price {
+    &-form {
+      &__list {
+        flex-direction: column;
+        &::after {
+          top: 50%;
+          left: 4px;
+          width: 9px;
+          height: 98%;
+          transform: translate(0, -50%);
+        }
+      }
+      &__item {
+        margin-bottom: 20px;
+        &:last-child {margin-bottom: 0;}
+      }
+      &__label {
+        padding-left: 30px;
+      }
+      &__checkbox, &__checkmark {
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+      }
+    }
+
+    &-choose {
+      &__item {
+        height: auto;
+      }
+    }
+
+    &-package {
+      &__buttons {
+        flex-direction: column;
+      }
+
+      &__btn {
+        width: 100%;
+        margin-bottom: 10px;
+        &:last-child {margin-bottom: 0;}
+      }
     }
   }
 

@@ -48,7 +48,7 @@ $(function () {
 
 
 /* Partners Slider Scrolling */
-$(function () {
+(function () {
   const slider = document.querySelector('.partners');
   const speed = 1.5;
   let isDown = false;
@@ -79,4 +79,4 @@ $(function () {
     const walk = (x - startX) * speed;
     slider.scrollLeft = scrollLeft - walk;
   });
-});
+}());
